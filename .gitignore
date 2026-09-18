@@ -1,0 +1,34 @@
+```text
+# Private R&D data
+*.xlsx
+*.xls
+*.csv
+*.db
+*.sqlite
+*.sqlite3
+
+# Private company data
+private/
+internal/
+data/
+secrets/
+
+# Environment / credentials
+.env
+.env.*
+*.key
+*.pem
+*.token
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+```
+
