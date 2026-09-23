@@ -4,8 +4,8 @@ import sys
 import re
 
 # 关键：确保本地回环地址绕过公司网络代理，而远程请求（PubMed）正常走代理
-os.environ["NO_PROXY"] = "127.0.0.1,localhost,0.0.0.0,.bosch.com"
-os.environ["no_proxy"] = "127.0.0.1,localhost,0.0.0.0,.bosch.com"
+os.environ["NO_PROXY"] = "127.0.0.1,localhost,0.0.0.0"
+os.environ["no_proxy"] = "127.0.0.1,localhost,0.0.0.0"
 
 import json
 import ollama
