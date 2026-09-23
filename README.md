@@ -548,6 +548,11 @@ Clone this repository:
 ```bash
 git clone https://github.com/YOUR_USERNAME/vitalpet-rd.git
 cd vitalpet-rd
+
+#please note ./data is not uploaded because of company privacy.
+#you can refer to info below to buildup this folder manually or contact us for the template
+ #ls data
+ #cleaned  evidence_vault.db  raw  training  VitalPet_Ingredient_Master_Template.xlsx
 ```
 
 Create the VitalPet-RD model:
@@ -559,7 +564,7 @@ ollama create vitalpet-rd:0.1 -f Modelfile
 Run:
 
 ```bash
-ollama run vitalpet-rd:0.1
+PYTHONPATH=. python3 app/agent.py
 ```
 
 ---
