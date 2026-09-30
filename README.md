@@ -350,21 +350,18 @@ The structured database is intended to remain separate from the language model's
 
 ## Phase 0.3 — Formula Engine
 
-Future versions will introduce deterministic formulation calculations.
+Future versions will introduce deterministic formulation calculations and use the website tool.
 
-Potential functions include:
+Steps include:
 
 ```text
-search_ingredients()
-get_ingredient()
-calculate_formula()
-calculate_cost()
-compare_formulas()
+pip install streamlit openpyxl pandas
+streamlit run app_web.py
+
+
 ```
 
-The language model should determine **what needs to be calculated**, while deterministic software performs the actual numerical calculation.
-
-This separation is important because language models should not be relied upon for critical formulation arithmetic.
+Then you can access the ai model via web http://localhost:8501 or http://host-ip:8501
 
 ---
 
